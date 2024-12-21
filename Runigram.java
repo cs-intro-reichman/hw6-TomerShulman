@@ -66,7 +66,6 @@ public class Runigram {
 			for (int j = 0; j < image[i].length; j++) {
 				print(image[i][j]);
 			}
-			System.out.println();
 		}
 		//// Notice that all you have to so is print every element (i,j) of the array using the print(Color) function.
 	}
@@ -75,8 +74,13 @@ public class Runigram {
 	 * Returns an image which is the horizontally flipped version of the given image. 
 	 */
 	public static Color[][] flippedHorizontally(Color[][] image) {
-		//// Replace the following statement with your code
-		return null;
+		Color[][]arry = new Color[image.length][image[0].length];
+		for (int i = 0; i < image.length; i++) {
+			for (int j = 0; j < image[i].length; j++) {
+				arry[i][j] = image[i][image[i].length - j - 1];
+			}
+		}
+		return arry;
 	}
 	
 	/**
