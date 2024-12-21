@@ -89,7 +89,7 @@ public class Runigram {
 	public static Color[][] flippedVertically(Color[][] image){
 		Color[][]arry = new Color[image.length][image[0].length];
 		for (int i = 0; i < image.length; i++) {
-			for (int j = 0; j < image[j].length; j++) {
+			for (int j = 0; j < image[i].length; j++) {
 				arry[i][j] = image[image.length-1-i][j];
 			}
 		}
